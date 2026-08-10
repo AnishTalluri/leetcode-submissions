@@ -5,6 +5,5 @@ class Solution:
         for index, num in enumerate(nums):
             if (target - num) in hashmap:
                 return [hashmap[target - num], index]
-            else:
-                hashmap[num] = index
             
+            hashmap[num] = index
