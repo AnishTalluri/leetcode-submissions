@@ -6,8 +6,9 @@ class Solution:
         prefix = strs[0]
 
         for string in strs[1:]:
-            while not string.startswith(prefix):
+            while string.startswith(prefix) != True:
                 prefix = prefix[:-1]
+            
             if not prefix:
                 return ""
         
