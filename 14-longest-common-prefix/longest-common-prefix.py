@@ -6,7 +6,7 @@ class Solution:
         prefix = strs[0]
 
         for string in strs[1:]:
-            while string.find(prefix) != 0:
+            while string.startswith(prefix) != True:
                 prefix = prefix[:-1]
         
         return prefix
