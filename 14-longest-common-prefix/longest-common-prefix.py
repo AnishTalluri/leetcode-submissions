@@ -5,8 +5,8 @@ class Solution:
 
         prefix = strs[0]
 
-        for string in strs[1:]:
-            while string.startswith(prefix) != True:
+        for s in strs[1:]:
+            while not s.startswith(prefix):
                 prefix = prefix[:-1]
             
             if not prefix:
